@@ -1,0 +1,22 @@
+ {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<body>
+    <header>
+  <h1>About Me</h1>
+    </header>
+    <main class="container">
+  <p>My name is [Your Name]. I am a [Your Profession] from [Your Location]. I have been working in the [Your Industry] industry for [Number of Years] years.</p>
+  <p>I am passionate about [Your Interests]. I am also skilled in [Your Skills].</p>
+  <p>I am available for freelance work. You can contact me at [Your Contact Information].</p>
+    </main>
+</body>
+<footer>
+    <p>Contact us for more information.</p>
+    <a href ="{% url 'home'%}">home</a>
+    <a href="{% url 'contact'%}">Contact Us</a>
+</footer>
+</html>

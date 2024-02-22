@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is my web page.">
+  <meta name="keywords" content="web page, HTML, CSS">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+</head>
+<body>
+  <header >
+    <h1> welcom to my library</h1>
+  </header>
+  <main class ="container">
+  <h2>features of books </h2>
+  <div class ="book">
+    <h3>title: {{book1.title}}</h3>
+    <p> Author: {{book1.author}}</p>
+    <p>Subject: {{book1.subject}}</p>
+  </div>
+  
+</body>
+<footer>
+    <p>Contact us for more information.</p>
+    <a href ="{% url 'about'%}">About Us</a>
+    <a href="{% url 'contact'%}">Contact Us</a>
+</footer>
+</html>
