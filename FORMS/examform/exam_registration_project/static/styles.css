@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(126, 124, 189);
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text fields */
+input[type="text"],
+input[type="email"],
+select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%; /* Make text fields expand to full width */
+}
+
+/* Submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Success message */
+.success-message {
+    color: green;
+    font-weight: bold;
+}
